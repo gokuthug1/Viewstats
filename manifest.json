@@ -1,0 +1,50 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon128.plasmo.3c1ed2d2.png",
+         "16": "icon16.plasmo.6c567d50.png",
+         "32": "icon32.plasmo.76b92899.png",
+         "48": "icon48.plasmo.aced7582.png",
+         "64": "icon64.plasmo.8bb5e6e0.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "static/background/index.js"
+   },
+   "content_scripts": [ {
+      "css": [ "charts.1d7e00c4.css" ],
+      "js": [ "charts.23d7f02e.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   }, {
+      "css": [ "vs-profile-btn.bada0cda.css" ],
+      "js": [ "vs-profile-btn.b78ce137.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   }, {
+      "css": [  ],
+      "js": [ "ab-test-detection.9151770e.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   } ],
+   "description": "View video and channel analytics while browsing YouTube",
+   "host_permissions": [ "https://youtube.com/*", "https://api.viewstats.com/*" ],
+   "icons": {
+      "128": "icon128.plasmo.3c1ed2d2.png",
+      "16": "icon16.plasmo.6c567d50.png",
+      "32": "icon32.plasmo.76b92899.png",
+      "48": "icon48.plasmo.aced7582.png",
+      "64": "icon64.plasmo.8bb5e6e0.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk3UxRDoe0V3ROAb5tPjORITH28qbpbZYtnFrufklA+kNRIHyguJDkbg3bwVOxlwvy6YSngdHI9FgWU5NYqaHrIfRKSqNSyrxulvnYUw29sy9PV7tuirRl8Fjvm3yxIgyCW34Qdbz/g5E1PEluQg572B5VWj+Fex5oZ807hQ2QfhH0mqynktJkGTOFOQOJHa99QbCqfiVcvvK4+Nt6Hce/gsgnHzP21lnxc95ncM6K7iPpkL7Au2iJi8IBINfIHJxScjm+cJ5CMeDC/5aItK3JcBjC8yIXJDUI8oFCF4YR2NYWclv/ZfoDbCmrynWzfLR2iNlzisTPgS0gfcaqtZ1UwIDAQAB",
+   "manifest_version": 3,
+   "name": "Viewstats - YouTube video & channel analytics",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "charts.93a5d608.png", "charts.6a315c7a.svg", "charts.4923d53e.svg", "charts.59597f1e.svg", "charts.49b826b7.css", "charts.67369416.css", "charts.a69946d8.css" ]
+   }, {
+      "matches": [ "https://www.youtube.com/*" ],
+      "resources": [ "vs-profile-btn.02e72c56.css" ]
+   } ]
+}
